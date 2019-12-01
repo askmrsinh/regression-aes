@@ -333,3 +333,10 @@ venv.bak/
 pip-selfcheck.json
 
 # End of https://www.gitignore.io/api/venv,python,pycharm,pycharm+all,pycharm+iml,jupyternotebooks
+
+# OTHERS
+input/asap-aes/*.zip
+input/asap-aes/*.tsv
+input/asap-aes/*.xls
+input/asap-aes/*.xlsx
+input/asap-aes/*.csv
