@@ -23,6 +23,7 @@ nbconvert==5.6.1
 nbformat==4.4.0
 notebook==6.0.2
 numpy==1.17.4
+pandas==0.25.3
 pandocfilters==1.4.2
 parso==0.5.1
 pexpect==4.7.0
@@ -33,6 +34,7 @@ ptyprocess==0.6.0
 Pygments==2.5.2
 pyrsistent==0.15.6
 python-dateutil==2.8.1
+pytz==2019.3
 pyzmq==18.1.1
 Send2Trash==1.5.0
 six==1.13.0
