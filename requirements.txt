@@ -35,6 +35,7 @@ jupyterlab-server==1.0.6
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
 kiwisolver==1.1.0
+language-check==1.1
 Markdown==3.1.1
 MarkupSafe==1.1.1
 matplotlib==3.1.2
