@@ -87,6 +87,96 @@ Table: Dataset Stats (setwise):
                     | 75%            | 5.000000  | 4.000000    | 2.000000    | 2.000000    | 3.000000    | 3.000000    | 10.000000   | 20.000000   |
                     | max            | 6.000000  | 6.000000    | 3.000000    | 3.000000    | 4.000000    | 4.000000    | 12.000000   | 30.000000   |
 
+
+-----------------------
+2. Some Important Files
+-----------------------
+
+The project repository (https://github.com/user501254/nn-aes) contains a couple of Jupyter notebooks and a single
+python script.
+
+Jupyter notebooks:
+    data_etl.ipynb                  to extract transform and load the ASAP-AES dataset
+    regression_model.ipynb          for interactive model building
+    
+Script:
+    main.py                         similar functionality to `regression_model` notebook but as a script
+
+Directories:
+    input/asap-aes                  for storing extracted ASAP-AES dataset
+    output/training_set_rel3.pkl    a pre formed dataframe with additional features for quick modeling
+
+The script file `main.py` makes use of loops for model training and evaluation across all possible feature combinations.
+This is different from the `regression_model` notebook, since there training is done on all features at once.
+
+
+---------------------
+3. Application Design
+---------------------
+
+In a regression problem, we aim to predict the output of a continuous value, like in this case, the score for an essay.
+Altough the grading is done in discreete steps within the range of 0-60, we can solve this problem through regression.
+Other alternative approaches may include classifcation, Nural Nets and Deap Learning.
+
+First, we load the data into a data frame and compute various sets of features. These can be roughly categoried as:
+    meta_features = ['essay_length', 'avg_sentence_length', 'avg_word_length']
+    grammar_features = ['sentiment', 'noun_phrases', 'syntax_errors']
+    redability_features = ['readability_index', 'difficult_words']
+
+Meta Features: 
+    1. Essay Length (number of words)
+    2. Average Sentence Length
+    3. Average Word Length
+Grammar Features
+    4. Sentiment (+ve/-ve)
+    5. Noun Phrases Count
+    6. Syntax Errors Count
+Redability Features
+    7. Readability Index Score
+    8. Difficult Words Count
+
+Thse features are computed using TextBlob package and other method and then fed into a Sequential model with two densely
+connected hidden layers, and an output layer that returns a single, continuous value. This model is trained for 1000 
+epochs, and record the training and validation accuracy. Callbacks are provided for early returns incase of no further
+improvemnt is observed.
+
+The training happens across all possible feature combinations given and results can be compared (use `main.py` script).
+These combinations sum up to 511. 
+
+---------------------
+4. Setup Instructions
+---------------------
+
+Please make sure that the dataset is downloaded and extracted to input/asap-aes folder.
+
+1. Install and activate python3 virtual environment
+    see: https://docs.python.org/3/library/venv.html
+
+2. Install required packages via `pip`
+    pip install -r requirements.txt
+
+3. Download additional library files (see notebooks for details, most likely this won't be an issue)
+
+4. Starting Jupyter Server
+    see: https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html
+
+5. Run `data_etl.ipynb` first, followed by  `regression_model.ipynb`
+
+
+----------------
+5. Usage Details
+----------------
+
+As of now the program has no command line parameters that could be passes.
+Just use `python3 main.py` once output/training_set_rel3.pkl is created.
+
+
+-------------------------
+6. Visualization and Demo
+-------------------------
+
+TODO
+https://asing80.people.uic.edu/cs421/
 ```
  
 
