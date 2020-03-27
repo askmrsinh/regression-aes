@@ -1,4 +1,3 @@
-```
 This project aims to automatically score student essays using NLP techniques.
 Here, the problem of automatic grading is approached as a regression problem.
 
@@ -9,17 +8,17 @@ essays having various attributes.
 -----
 INDEX
 -----
-1. About the ASAP-AES Dataset
-2. Some Important Files
-3. Application Design
-4. Setup Instructions
-5. Usage Details
-6. Visualization and Demo
+
+1. [About the ASAP-AES Dataset](#1-about-the-asap-aes-dataset)
+2. [Some Important Files](#2-some-important-files)
+3. [Application Design](#3-application-design)
+4. [Setup Instructions](#4-setup-instructions)
+5. [Usage Details](#5-usage-details)
+6. [Visualization and Demo](#6-visualization-and-demo)
 
 
------------------------------
-1. About the ASAP-AES Dataset
------------------------------
+1\. About the ASAP-AES Dataset
+------------------------------
 
 The dataset was made available through a competition held by The William and Flora Hewlett Foundation (Hewlett).
 There are sevral available data formats including TSV and excel. Each file has a number of columns.
@@ -40,7 +39,7 @@ incorperating these scores in the model building process post preprocessing may 
 
 
 Table: ASAP-AES Dataset overview:
-================================
+
 | essay_id | essay_set | essay | rater1_domain1                                    | rater2_domain1 | rater3_domain1 | domain1_score | rater1_domain2 | rater2_domain2 | domain2_score | ... | rater2_trait3 | rater2_trait4 | rater2_trait5 | rater2_trait6 | rater3_trait1 | rater3_trait2 | rater3_trait3 | rater3_trait4 | rater3_trait5 | rater3_trait6 |     | 
 |----------|-----------|-------|---------------------------------------------------|----------------|----------------|---------------|----------------|----------------|---------------|-----|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|-----| 
 | 0        | 1         | 1     | Dear local newspaper, I think effects computer... | 4              | 4              | NaN           | 8              | NaN            | NaN           | NaN | ...           | NaN           | NaN           | NaN           | NaN           | NaN           | NaN           | NaN           | NaN           | NaN           | NaN | 
@@ -56,41 +55,38 @@ Table: ASAP-AES Dataset overview:
 | 12975    | 21633     | 8     | Many people believe that laughter can improve...  | 20             | 20             | NaN           | 40             | NaN            | NaN           | NaN | ...           | 4.0           | 4.0           | 4.0           | 4.0           | NaN           | NaN           | NaN           | NaN           | NaN           | NaN | 
 
 
-Table: Dataset Stats (setwise):
-===============================
-                    | essay_set      | 1         | 2           | 3           | 4           | 5           | 6           | 7           | 8           |
-                    |----------------|-----------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
-   domain1_score    | count          | 1783.0000 | 1800.000000 | 1726.000000 | 1770.000000 | 1805.000000 | 1800.000000 | 1569.000000 | 723.000000  | 
-                    | mean           | 8.528323  | 3.415556    | 1.848204    | 1.432203    | 2.408864    | 2.720000    | 16.062460   | 36.950207   |
-                    | std            | 1.538565  | 0.774512    | 0.815157    | 0.939782    | 0.970821    | 0.970630    | 4.585350    | 5.753502    |
-                    | min            | 2.000000  | 1.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 2.000000    | 10.000000   |
-                    | 25%            | 8.000000  | 3.000000    | 1.000000    | 1.000000    | 2.000000    | 2.000000    | 13.000000   | 33.000000   |
-                    | 50%            | 8.000000  | 3.000000    | 2.000000    | 1.000000    | 2.000000    | 3.000000    | 16.000000   | 37.000000   |
-                    | 75%            | 10.000000 | 4.000000    | 2.000000    | 2.000000    | 3.000000    | 3.000000    | 19.000000   | 40.000000   |
-                    | max            | 12.000000 | 6.000000    | 3.000000    | 3.000000    | 4.000000    | 4.000000    | 24.000000   | 60.000000   |
+Table: Dataset Stats (set-wise):
 
-   rater1_domain1   | count          | 1783.0000 | 1800.000000 | 1726.000000 | 1770.000000 | 1805.000000 | 1800.000000 | 1569.000000 | 723.000000  | 
-                    | mean           | 4.260796  | 3.415556    | 1.741020    | 1.320339    | 2.221053    | 2.561111    | 8.023582    | 18.338866   |
-                    | std            | 0.842119  | 0.774512    | 0.777672    | 0.879825    | 0.988515    | 0.979296    | 2.424120    | 3.170147    |
-                    | min            | 1.000000  | 1.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 5.000000    |
-                    | 25%            | 4.000000  | 3.000000    | 1.000000    | 1.000000    | 2.000000    | 2.000000    | 6.000000    | 16.000000   |
-                    | 50%            | 4.000000  | 3.000000    | 2.000000    | 1.000000    | 2.000000    | 3.000000    | 8.000000    | 19.000000   |
-                    | 75%            | 5.000000  | 4.000000    | 2.000000    | 2.000000    | 3.000000    | 3.000000    | 10.000000   | 20.000000   |
-                    | max            | 6.000000  | 6.000000    | 3.000000    | 3.000000    | 4.000000    | 4.000000    | 12.000000   | 30.000000   |
-
-   rater2_domain1   | count          | 1783.0000 | 1800.000000 | 1726.000000 | 1770.000000 | 1805.000000 | 1800.000000 | 1569.000000 | 723.000000  | 
-                    | mean           | 4.267527  | 3.436667    | 1.698725    | 1.316384    | 2.221607    | 2.550000    | 8.038878    | 18.557400   |
-                    | std            | 0.816287  | 0.775808    | 0.752710    | 0.877076    | 0.992030    | 0.977655    | 2.517367    | 3.170669    |
-                    | min            | 1.000000  | 1.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 5.000000    |
-                    | 25%            | 4.000000  | 3.000000    | 1.000000    | 1.000000    | 2.000000    | 2.000000    | 6.000000    | 16.000000   |
-                    | 50%            | 4.000000  | 3.000000    | 2.000000    | 1.000000    | 2.000000    | 3.000000    | 8.000000    | 19.000000   |
-                    | 75%            | 5.000000  | 4.000000    | 2.000000    | 2.000000    | 3.000000    | 3.000000    | 10.000000   | 20.000000   |
-                    | max            | 6.000000  | 6.000000    | 3.000000    | 3.000000    | 4.000000    | 4.000000    | 12.000000   | 30.000000   |
+|                    | essay_set      | 1         | 2           | 3           | 4           | 5           | 6           | 7           | 8           |
+|--------------------|----------------|-----------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+|   domain1_score    | count          | 1783.0000 | 1800.000000 | 1726.000000 | 1770.000000 | 1805.000000 | 1800.000000 | 1569.000000 | 723.000000  | 
+|                    | mean           | 8.528323  | 3.415556    | 1.848204    | 1.432203    | 2.408864    | 2.720000    | 16.062460   | 36.950207   |
+|                    | std            | 1.538565  | 0.774512    | 0.815157    | 0.939782    | 0.970821    | 0.970630    | 4.585350    | 5.753502    |
+|                    | min            | 2.000000  | 1.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 2.000000    | 10.000000   |
+|                    | 25%            | 8.000000  | 3.000000    | 1.000000    | 1.000000    | 2.000000    | 2.000000    | 13.000000   | 33.000000   |
+|                    | 50%            | 8.000000  | 3.000000    | 2.000000    | 1.000000    | 2.000000    | 3.000000    | 16.000000   | 37.000000   |
+|                    | 75%            | 10.000000 | 4.000000    | 2.000000    | 2.000000    | 3.000000    | 3.000000    | 19.000000   | 40.000000   |
+|                    | max            | 12.000000 | 6.000000    | 3.000000    | 3.000000    | 4.000000    | 4.000000    | 24.000000   | 60.000000   |
+|   rater1_domain1   | count          | 1783.0000 | 1800.000000 | 1726.000000 | 1770.000000 | 1805.000000 | 1800.000000 | 1569.000000 | 723.000000  | 
+|                    | mean           | 4.260796  | 3.415556    | 1.741020    | 1.320339    | 2.221053    | 2.561111    | 8.023582    | 18.338866   |
+|                    | std            | 0.842119  | 0.774512    | 0.777672    | 0.879825    | 0.988515    | 0.979296    | 2.424120    | 3.170147    |
+|                    | min            | 1.000000  | 1.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 5.000000    |
+|                    | 25%            | 4.000000  | 3.000000    | 1.000000    | 1.000000    | 2.000000    | 2.000000    | 6.000000    | 16.000000   |
+|                    | 50%            | 4.000000  | 3.000000    | 2.000000    | 1.000000    | 2.000000    | 3.000000    | 8.000000    | 19.000000   |
+|                    | 75%            | 5.000000  | 4.000000    | 2.000000    | 2.000000    | 3.000000    | 3.000000    | 10.000000   | 20.000000   |
+|                    | max            | 6.000000  | 6.000000    | 3.000000    | 3.000000    | 4.000000    | 4.000000    | 12.000000   | 30.000000   |
+|   rater2_domain1   | count          | 1783.0000 | 1800.000000 | 1726.000000 | 1770.000000 | 1805.000000 | 1800.000000 | 1569.000000 | 723.000000  | 
+|                    | mean           | 4.267527  | 3.436667    | 1.698725    | 1.316384    | 2.221607    | 2.550000    | 8.038878    | 18.557400   |
+|                    | std            | 0.816287  | 0.775808    | 0.752710    | 0.877076    | 0.992030    | 0.977655    | 2.517367    | 3.170669    |
+|                    | min            | 1.000000  | 1.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 0.000000    | 5.000000    |
+|                    | 25%            | 4.000000  | 3.000000    | 1.000000    | 1.000000    | 2.000000    | 2.000000    | 6.000000    | 16.000000   |
+|                    | 50%            | 4.000000  | 3.000000    | 2.000000    | 1.000000    | 2.000000    | 3.000000    | 8.000000    | 19.000000   |
+|                    | 75%            | 5.000000  | 4.000000    | 2.000000    | 2.000000    | 3.000000    | 3.000000    | 10.000000   | 20.000000   |
+|                    | max            | 6.000000  | 6.000000    | 3.000000    | 3.000000    | 4.000000    | 4.000000    | 12.000000   | 30.000000   |
 
 
------------------------
-2. Some Important Files
------------------------
+2\. Some Important Files
+------------------------
 
 The project repository (https://github.com/user501254/nn-aes) contains a couple of Jupyter notebooks and a single
 python script.
@@ -110,42 +106,43 @@ The script file `main.py` makes use of loops for model training and evaluation a
 This is different from the `regression_model` notebook, since there training is done on all features at once.
 
 
----------------------
-3. Application Design
----------------------
+3\. Application Design
+----------------------
 
 In a regression problem, we aim to predict the output of a continuous value, like in this case, the score for an essay.
 Altough the grading is done in discreete steps within the range of 0-60, we can solve this problem through regression.
 Other alternative approaches may include classifcation, Nural Nets and Deap Learning.
 
 First, we load the data into a data frame and compute various sets of features. These can be roughly categoried as:
-    meta_features = ['essay_length', 'avg_sentence_length', 'avg_word_length']
-    grammar_features = ['sentiment', 'noun_phrases', 'syntax_errors']
-    redability_features = ['readability_index', 'difficult_words']
+```python
+meta_features = ['essay_length', 'avg_sentence_length', 'avg_word_length']
+grammar_features = ['sentiment', 'noun_phrases', 'syntax_errors']
+redability_features = ['readability_index', 'difficult_words']
+```
 
 Meta Features: 
     1. Essay Length (number of words)
     2. Average Sentence Length
     3. Average Word Length
 Grammar Features
-    4. Sentiment (+ve/-ve)
+    4. Sentiment (+ve/-ve) *
     5. Noun Phrases Count
     6. Syntax Errors Count
-Redability Features
+Readability Features
     7. Readability Index Score
     8. Difficult Words Count
 
-Thse features are computed using TextBlob package and other method and then fed into a Sequential model with two densely
+These features are computed using TextBlob package and other method and then fed into a Sequential model with two densely
 connected hidden layers, and an output layer that returns a single, continuous value. This model is trained for 1000 
 epochs, and record the training and validation accuracy. Callbacks are provided for early returns incase of no further
-improvemnt is observed.
+improvement is observed.
 
 The training happens across all possible feature combinations given and results can be compared (use `main.py` script).
 These combinations sum up to 511. 
 
----------------------
-4. Setup Instructions
----------------------
+
+4\. Setup Instructions
+----------------------
 
 Please make sure that the dataset is downloaded and extracted to input/asap-aes folder.
 
@@ -163,20 +160,15 @@ Please make sure that the dataset is downloaded and extracted to input/asap-aes 
 5. Run `data_etl.ipynb` first, followed by  `regression_model.ipynb`
 
 
-----------------
-5. Usage Details
-----------------
+5\. Usage Details
+-----------------
 
 As of now the program has no command line parameters that could be passes.
 Just use `python3 main.py` once output/training_set_rel3.pkl is created.
 
 
--------------------------
-6. Visualization and Demo
--------------------------
+6\. Visualization and Demo
+--------------------------
 
 TODO
 https://asing80.people.uic.edu/cs421/
-```
- 
-
