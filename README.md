@@ -1,3 +1,6 @@
+Regression AES — Automated Essay Scoring as regression problem
+==============================================================
+
 This project aims to automatically score student essays using NLP techniques.
 Here, the problem of automatic grading is approached as a regression problem.
 
@@ -120,25 +123,29 @@ grammar_features = ['sentiment', 'noun_phrases', 'syntax_errors']
 redability_features = ['readability_index', 'difficult_words']
 ```
 
-Meta Features: 
+1. Meta Features:
     1. Essay Length (number of words)
     2. Average Sentence Length
     3. Average Word Length
-Grammar Features
-    4. Sentiment (+ve/-ve) *
-    5. Noun Phrases Count
-    6. Syntax Errors Count
-Readability Features
-    7. Readability Index Score
-    8. Difficult Words Count
 
-These features are computed using TextBlob package and other method and then fed into a Sequential model with two densely
+2. Grammar Features:
+    1. Sentiment (+ve/-ve) *
+    2. Noun Phrases Count
+    3. Syntax Errors Count
+
+3. Readability Features:
+    1. Readability Index Score
+    2. Difficult Words Count
+
+These features are computed using [TextBlob][1] package and other method and then fed into a Sequential model with two densely
 connected hidden layers, and an output layer that returns a single, continuous value. This model is trained for 1000 
 epochs, and record the training and validation accuracy. Callbacks are provided for early returns incase of no further
 improvement is observed.
 
 The training happens across all possible feature combinations given and results can be compared (use `main.py` script).
 These combinations sum up to 511. 
+
+[1]: https://textblob.readthedocs.io/en/dev/
 
 
 4\. Setup Instructions
