@@ -1,0 +1,512 @@
+	features	QWK	MSE	MAE
+0	('essay_set',)	0.9668506838738608	5.3803277015686035	1.4395865201950073
+1	('essay_length',)	0.15395462819935124	80.52267456054688	6.141106605529785
+2	('avg_sentence_length',)	0.010573199621203955	85.01312255859375	6.277622222900391
+3	('avg_word_length',)	0.010845929171487412	84.87764739990234	6.358463764190674
+4	('sentiment',)	-0.00016714212398549755	85.51838684082031	6.302937030792236
+5	('noun_phrases',)	0.08748814430399798	80.83361053466797	5.991590976715088
+6	('syntax_errors',)	0.05544484664852678	83.16437530517578	6.187286853790283
+7	('readability_index',)	0.02179617405466161	84.82903289794922	6.167185306549072
+8	('difficult_words',)	0.09894603119253498	82.24919128417969	6.478002071380615
+9	('essay_set', 'essay_length')	0.9661120704680013	5.6546173095703125	1.4606223106384277
+10	('essay_set', 'avg_sentence_length')	0.9481449977868471	6.801224708557129	1.6174044609069824
+11	('essay_set', 'avg_word_length')	0.9588067207272223	5.645989418029785	1.5099623203277588
+12	('essay_set', 'sentiment')	0.9664317881937338	5.46167516708374	1.4545458555221558
+13	('essay_set', 'noun_phrases')	0.9378774693676825	8.01744270324707	1.7579586505889893
+14	('essay_set', 'syntax_errors')	0.9644739658812389	5.916759490966797	1.571082592010498
+15	('essay_set', 'readability_index')	0.9622212367545122	5.565152168273926	1.4381577968597412
+16	('essay_set', 'difficult_words')	0.9305775526586401	8.792756080627441	1.747889757156372
+17	('essay_length', 'avg_sentence_length')	0.08493342260315229	81.78496551513672	5.973771572113037
+18	('essay_length', 'avg_word_length')	0.16182085241836708	79.80369567871094	6.10622501373291
+19	('essay_length', 'sentiment')	0.16603725685157655	79.58737182617188	6.104437828063965
+20	('essay_length', 'noun_phrases')	0.16623614161284173	80.25885772705078	6.120680809020996
+21	('essay_length', 'syntax_errors')	0.1621705304864164	80.20813751220703	6.121620178222656
+22	('essay_length', 'readability_index')	0.17964948652193424	78.0836181640625	6.015177249908447
+23	('essay_length', 'difficult_words')	0.18400441133078904	78.62934875488281	6.091082572937012
+24	('avg_sentence_length', 'avg_word_length')	0.028577546453304237	84.65667724609375	6.600544452667236
+25	('avg_sentence_length', 'sentiment')	0.01104769742644951	84.99834442138672	6.283551216125488
+26	('avg_sentence_length', 'noun_phrases')	0.13422685664595824	80.11046600341797	6.081936836242676
+27	('avg_sentence_length', 'syntax_errors')	0.04890509241769325	83.43895721435547	6.375768184661865
+28	('avg_sentence_length', 'readability_index')	0.03201553564566706	84.06480407714844	6.22831392288208
+29	('avg_sentence_length', 'difficult_words')	0.12164228734581561	81.12873840332031	6.421148300170898
+30	('avg_word_length', 'sentiment')	0.017325756819488225	85.25981903076172	6.66397762298584
+31	('avg_word_length', 'noun_phrases')	0.0834425020491737	82.88536834716797	5.661533832550049
+32	('avg_word_length', 'syntax_errors')	0.06925298053078544	83.703857421875	6.63672399520874
+33	('avg_word_length', 'readability_index')	0.022253901254617348	84.79597473144531	6.162825107574463
+34	('avg_word_length', 'difficult_words')	0.1020694628192167	82.18273162841797	6.498710632324219
+35	('sentiment', 'noun_phrases')	0.1149140670064317	80.78658294677734	6.447686672210693
+36	('sentiment', 'syntax_errors')	0.046733600989990576	83.34261322021484	6.121187686920166
+37	('sentiment', 'readability_index')	0.019609653304520358	84.81941223144531	6.15958309173584
+38	('sentiment', 'difficult_words')	0.0780263979602942	83.34009552001953	5.728239059448242
+39	('noun_phrases', 'syntax_errors')	0.1368540973148239	83.58086395263672	6.7410149574279785
+40	('noun_phrases', 'readability_index')	0.11418040719964662	80.04741668701172	5.882126808166504
+41	('noun_phrases', 'difficult_words')	0.14784447168120152	80.38695526123047	6.119926452636719
+42	('syntax_errors', 'readability_index')	0.06919414798823398	82.73126220703125	6.292144775390625
+43	('syntax_errors', 'difficult_words')	0.11002761013122986	81.36337280273438	6.140074253082275
+44	('readability_index', 'difficult_words')	0.13224791174942396	80.767578125	6.4946770668029785
+45	('essay_set', 'essay_length', 'avg_sentence_length')	0.9604598795472878	7.277510166168213	1.5873279571533203
+46	('essay_set', 'essay_length', 'avg_word_length')	0.7800605425632231	27.604867935180664	3.161189556121826
+47	('essay_set', 'essay_length', 'sentiment')	0.9659478446895455	5.6058220863342285	1.4422320127487183
+48	('essay_set', 'essay_length', 'noun_phrases')	0.9594468502217708	7.438416957855225	1.6015510559082031
+49	('essay_set', 'essay_length', 'syntax_errors')	0.9576544112219274	7.619203567504883	1.677856206893921
+50	('essay_set', 'essay_length', 'readability_index')	0.9664380271908759	5.594235420227051	1.4591418504714966
+51	('essay_set', 'essay_length', 'difficult_words')	0.792832441967174	25.41689682006836	2.8742122650146484
+52	('essay_set', 'avg_sentence_length', 'avg_word_length')	0.94565670619743	7.033076286315918	1.621812343597412
+53	('essay_set', 'avg_sentence_length', 'sentiment')	0.9375148917245656	8.043949127197266	1.779033899307251
+54	('essay_set', 'avg_sentence_length', 'noun_phrases')	0.9564733553030049	6.029008388519287	1.490847110748291
+55	('essay_set', 'avg_sentence_length', 'syntax_errors')	0.9631109307759217	5.5564284324646	1.4545791149139404
+56	('essay_set', 'avg_sentence_length', 'readability_index')	0.9628765453051745	6.54902982711792	1.6357532739639282
+57	('essay_set', 'avg_sentence_length', 'difficult_words')	0.9211995342170317	10.020356178283691	2.0141761302948
+58	('essay_set', 'avg_word_length', 'sentiment')	0.9665164553376	5.41055154800415	1.4315873384475708
+59	('essay_set', 'avg_word_length', 'noun_phrases')	0.9564125756985032	5.926723003387451	1.4691411256790161
+60	('essay_set', 'avg_word_length', 'syntax_errors')	0.9624242803124032	6.576486110687256	1.782385230064392
+61	('essay_set', 'avg_word_length', 'readability_index')	0.9655816193498746	5.479982376098633	1.441038966178894
+62	('essay_set', 'avg_word_length', 'difficult_words')	0.9665554631355776	5.869268894195557	1.4895466566085815
+63	('essay_set', 'sentiment', 'noun_phrases')	0.9555300540989797	6.086597919464111	1.5089200735092163
+64	('essay_set', 'sentiment', 'syntax_errors')	0.9637080208543707	5.682905197143555	1.4800100326538086
+65	('essay_set', 'sentiment', 'readability_index')	0.9642584826619838	6.79069709777832	1.8113726377487183
+66	('essay_set', 'sentiment', 'difficult_words')	0.9655028606315731	6.373714447021484	1.6304514408111572
+67	('essay_set', 'noun_phrases', 'syntax_errors')	0.9543150241630579	6.095556735992432	1.493045449256897
+68	('essay_set', 'noun_phrases', 'readability_index')	0.9601771983378785	6.94998025894165	1.844226360321045
+69	('essay_set', 'noun_phrases', 'difficult_words')	0.9552377438729065	6.479311466217041	1.7115299701690674
+70	('essay_set', 'syntax_errors', 'readability_index')	0.9617012440770316	5.6489973068237305	1.4768712520599365
+71	('essay_set', 'syntax_errors', 'difficult_words')	0.9571653947641371	6.160841464996338	1.6672707796096802
+72	('essay_set', 'readability_index', 'difficult_words')	0.9555323120171707	6.32253360748291	1.6833075284957886
+73	('essay_length', 'avg_sentence_length', 'avg_word_length')	0.1928781561346693	88.28726959228516	6.754971981048584
+74	('essay_length', 'avg_sentence_length', 'sentiment')	0.17042968672450287	78.82186126708984	6.044496536254883
+75	('essay_length', 'avg_sentence_length', 'noun_phrases')	0.1802854322855062	78.26805114746094	6.014786720275879
+76	('essay_length', 'avg_sentence_length', 'syntax_errors')	0.17081015737593208	79.65312194824219	6.079655170440674
+77	('essay_length', 'avg_sentence_length', 'readability_index')	0.2081284894126887	84.53298950195312	6.726031303405762
+78	('essay_length', 'avg_sentence_length', 'difficult_words')	0.17400827471289293	82.26641082763672	6.107553958892822
+79	('essay_length', 'avg_word_length', 'sentiment')	0.1695568671360903	78.98761749267578	6.107259273529053
+80	('essay_length', 'avg_word_length', 'noun_phrases')	0.17485305261701634	78.34745788574219	6.050543308258057
+81	('essay_length', 'avg_word_length', 'syntax_errors')	0.16710847337904688	79.89740753173828	6.155319690704346
+82	('essay_length', 'avg_word_length', 'readability_index')	0.17178715376038878	78.92929077148438	6.067808628082275
+83	('essay_length', 'avg_word_length', 'difficult_words')	0.1785648702676046	77.92947387695312	6.020501136779785
+84	('essay_length', 'sentiment', 'noun_phrases')	0.1812831548456424	78.62029266357422	6.074798107147217
+85	('essay_length', 'sentiment', 'syntax_errors')	0.17579652330254647	79.67631530761719	6.4472551345825195
+86	('essay_length', 'sentiment', 'readability_index')	0.1754374527104846	78.50001525878906	6.061091423034668
+87	('essay_length', 'sentiment', 'difficult_words')	0.1817477688024688	78.2608413696289	6.056699275970459
+88	('essay_length', 'noun_phrases', 'syntax_errors')	0.16996237954465343	79.88108825683594	6.10482120513916
+89	('essay_length', 'noun_phrases', 'readability_index')	0.17405917565621554	78.14622497558594	6.006875038146973
+90	('essay_length', 'noun_phrases', 'difficult_words')	0.16676312930225445	76.96240234375	6.017059326171875
+91	('essay_length', 'syntax_errors', 'readability_index')	0.17382091927362475	78.61803436279297	6.061647891998291
+92	('essay_length', 'syntax_errors', 'difficult_words')	0.17855043825522365	78.19709014892578	6.009420394897461
+93	('essay_length', 'readability_index', 'difficult_words')	0.1962266151644334	78.6822509765625	6.284520626068115
+94	('avg_sentence_length', 'avg_word_length', 'sentiment')	0.02655257322947613	84.95719909667969	6.70482063293457
+95	('avg_sentence_length', 'avg_word_length', 'noun_phrases')	0.13719482539673622	79.87120819091797	6.068554401397705
+96	('avg_sentence_length', 'avg_word_length', 'syntax_errors')	0.08179106009125703	83.42666625976562	6.5821003913879395
+97	('avg_sentence_length', 'avg_word_length', 'readability_index')	0.03439799954048406	84.03244018554688	6.233861446380615
+98	('avg_sentence_length', 'avg_word_length', 'difficult_words')	0.11544783287522264	80.496826171875	5.922459602355957
+99	('avg_sentence_length', 'sentiment', 'noun_phrases')	0.10322725516049114	79.86835479736328	6.167412281036377
+100	('avg_sentence_length', 'sentiment', 'syntax_errors')	0.051764339519046465	83.27139282226562	6.389761924743652
+101	('avg_sentence_length', 'sentiment', 'readability_index')	0.03160955407117838	84.13762664794922	6.218577861785889
+102	('avg_sentence_length', 'sentiment', 'difficult_words')	0.07817527822336534	83.58873748779297	5.625970363616943
+103	('avg_sentence_length', 'noun_phrases', 'syntax_errors')	0.13625348309299323	80.36143493652344	6.126523017883301
+104	('avg_sentence_length', 'noun_phrases', 'readability_index')	0.10963562919508951	79.8896713256836	5.936069488525391
+105	('avg_sentence_length', 'noun_phrases', 'difficult_words')	0.1544488606077341	79.70985412597656	6.113819599151611
+106	('avg_sentence_length', 'syntax_errors', 'readability_index')	0.07343408529014595	82.49765014648438	6.29618501663208
+107	('avg_sentence_length', 'syntax_errors', 'difficult_words')	0.11992738121390523	81.04180908203125	6.088791370391846
+108	('avg_sentence_length', 'readability_index', 'difficult_words')	0.12900049525539914	80.6324234008789	6.490381717681885
+109	('avg_word_length', 'sentiment', 'noun_phrases')	0.08504646304253194	82.70552062988281	5.634380340576172
+110	('avg_word_length', 'sentiment', 'syntax_errors')	0.04664566026501571	83.2073745727539	6.3369269371032715
+111	('avg_word_length', 'sentiment', 'readability_index')	0.021124686537298043	84.76954650878906	6.161625385284424
+112	('avg_word_length', 'sentiment', 'difficult_words')	0.1020284022716823	82.09361267089844	6.50631046295166
+113	('avg_word_length', 'noun_phrases', 'syntax_errors')	0.13593008622036007	83.36724090576172	6.747354030609131
+114	('avg_word_length', 'noun_phrases', 'readability_index')	0.1188158915057177	79.22795104980469	6.045405864715576
+115	('avg_word_length', 'noun_phrases', 'difficult_words')	0.1066676225322909	82.31367492675781	5.684804439544678
+116	('avg_word_length', 'syntax_errors', 'readability_index')	0.08184253651480922	82.00823974609375	6.121226787567139
+117	('avg_word_length', 'syntax_errors', 'difficult_words')	0.10918965653569657	81.35182189941406	6.101809024810791
+118	('avg_word_length', 'readability_index', 'difficult_words')	0.13174595504872433	80.82438659667969	6.517894744873047
+119	('sentiment', 'noun_phrases', 'syntax_errors')	0.09606672770957425	80.78443908691406	6.216607093811035
+120	('sentiment', 'noun_phrases', 'readability_index')	0.1220706584272454	79.1962890625	6.100599765777588
+121	('sentiment', 'noun_phrases', 'difficult_words')	0.14659993155438777	80.27842712402344	6.1123270988464355
+122	('sentiment', 'syntax_errors', 'readability_index')	0.07329765396432442	82.5030517578125	6.294422149658203
+123	('sentiment', 'syntax_errors', 'difficult_words')	0.10874431272237306	81.29459381103516	6.0911102294921875
+124	('sentiment', 'readability_index', 'difficult_words')	0.14053560031217294	79.71240997314453	6.35899019241333
+125	('noun_phrases', 'syntax_errors', 'readability_index')	0.11248916577930768	80.18537902832031	5.923516750335693
+126	('noun_phrases', 'syntax_errors', 'difficult_words')	0.11065497358406551	83.20742797851562	5.6974663734436035
+127	('noun_phrases', 'readability_index', 'difficult_words')	0.1319827867955946	81.15231323242188	5.6763691902160645
+128	('syntax_errors', 'readability_index', 'difficult_words')	0.14475608772316073	81.515380859375	6.548754692077637
+129	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length')	0.9554175169541236	7.785645008087158	1.7294431924819946
+130	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment')	0.9546978128227063	7.921788692474365	1.7616136074066162
+131	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases')	0.9591359493651903	7.5194478034973145	1.6149545907974243
+132	('essay_set', 'essay_length', 'avg_sentence_length', 'syntax_errors')	0.9229012370298911	9.86858081817627	1.8880823850631714
+133	('essay_set', 'essay_length', 'avg_sentence_length', 'readability_index')	0.9293416572891557	9.037481307983398	1.7529520988464355
+134	('essay_set', 'essay_length', 'avg_sentence_length', 'difficult_words')	0.9522580018208463	8.360936164855957	1.8777692317962646
+135	('essay_set', 'essay_length', 'avg_word_length', 'sentiment')	0.9668087691211642	5.5421037673950195	1.4401719570159912
+136	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases')	0.9657023701394295	5.744007587432861	1.4777238368988037
+137	('essay_set', 'essay_length', 'avg_word_length', 'syntax_errors')	0.9656760249891054	5.7271037101745605	1.476747751235962
+138	('essay_set', 'essay_length', 'avg_word_length', 'readability_index')	0.965768893407144	5.629001617431641	1.4623488187789917
+139	('essay_set', 'essay_length', 'avg_word_length', 'difficult_words')	0.9650223434471539	5.795539855957031	1.4889007806777954
+140	('essay_set', 'essay_length', 'sentiment', 'noun_phrases')	0.9658099312573682	5.889499187469482	1.48439359664917
+141	('essay_set', 'essay_length', 'sentiment', 'syntax_errors')	0.9650615574662265	5.851383209228516	1.4885605573654175
+142	('essay_set', 'essay_length', 'sentiment', 'readability_index')	0.9664009297841057	5.6984429359436035	1.4494751691818237
+143	('essay_set', 'essay_length', 'sentiment', 'difficult_words')	0.9579158256202155	6.413279056549072	1.6551377773284912
+144	('essay_set', 'essay_length', 'noun_phrases', 'syntax_errors')	0.9571031546138993	7.780320167541504	1.6617351770401
+145	('essay_set', 'essay_length', 'noun_phrases', 'readability_index')	0.9383025180445063	8.318197250366211	1.8948699235916138
+146	('essay_set', 'essay_length', 'noun_phrases', 'difficult_words')	0.965984230790813	5.731989860534668	1.4913274049758911
+147	('essay_set', 'essay_length', 'syntax_errors', 'readability_index')	0.9263374862020051	9.085396766662598	1.8343479633331299
+148	('essay_set', 'essay_length', 'syntax_errors', 'difficult_words')	0.9383994335578507	8.145981788635254	1.9333925247192383
+149	('essay_set', 'essay_length', 'readability_index', 'difficult_words')	0.9572743389502053	7.7479448318481445	1.667816400527954
+150	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment')	0.9637244748003666	6.822019100189209	1.6473747491836548
+151	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases')	0.9568977481174571	6.201135635375977	1.5809037685394287
+152	('essay_set', 'avg_sentence_length', 'avg_word_length', 'syntax_errors')	0.9560630835048076	6.1744303703308105	1.57184636592865
+153	('essay_set', 'avg_sentence_length', 'avg_word_length', 'readability_index')	0.9651111887713252	5.580282211303711	1.4276927709579468
+154	('essay_set', 'avg_sentence_length', 'avg_word_length', 'difficult_words')	0.951160327129801	6.568091869354248	1.6318492889404297
+155	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases')	0.9547891515244364	6.275620937347412	1.5487914085388184
+156	('essay_set', 'avg_sentence_length', 'sentiment', 'syntax_errors')	0.9311837192848821	8.763650894165039	1.8980211019515991
+157	('essay_set', 'avg_sentence_length', 'sentiment', 'readability_index')	0.9592828678137267	5.7843122482299805	1.4752362966537476
+158	('essay_set', 'avg_sentence_length', 'sentiment', 'difficult_words')	0.9516860379265716	6.5071916580200195	1.6044682264328003
+159	('essay_set', 'avg_sentence_length', 'noun_phrases', 'syntax_errors')	0.9632096710207563	5.904363632202148	1.4794312715530396
+160	('essay_set', 'avg_sentence_length', 'noun_phrases', 'readability_index')	0.9554314385372272	6.074418544769287	1.4852889776229858
+161	('essay_set', 'avg_sentence_length', 'noun_phrases', 'difficult_words')	0.9157550913882494	11.158177375793457	2.1351940631866455
+162	('essay_set', 'avg_sentence_length', 'syntax_errors', 'readability_index')	0.9622581440142934	6.546558380126953	1.6171553134918213
+163	('essay_set', 'avg_sentence_length', 'syntax_errors', 'difficult_words')	0.9631814756214453	5.903512001037598	1.491212010383606
+164	('essay_set', 'avg_sentence_length', 'readability_index', 'difficult_words')	0.9549861504122504	6.191695690155029	1.6315521001815796
+165	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases')	0.9554127491051835	6.025493144989014	1.478168249130249
+166	('essay_set', 'avg_word_length', 'sentiment', 'syntax_errors')	0.9622387710757012	6.828602313995361	1.8377829790115356
+167	('essay_set', 'avg_word_length', 'sentiment', 'readability_index')	0.9645772440746885	5.567142009735107	1.4569498300552368
+168	('essay_set', 'avg_word_length', 'sentiment', 'difficult_words')	0.9636673907980959	6.839303493499756	1.739928126335144
+169	('essay_set', 'avg_word_length', 'noun_phrases', 'syntax_errors')	0.961310793726545	5.677690029144287	1.4682070016860962
+170	('essay_set', 'avg_word_length', 'noun_phrases', 'readability_index')	0.9586463074877046	5.839451789855957	1.531770944595337
+171	('essay_set', 'avg_word_length', 'noun_phrases', 'difficult_words')	0.9604328552829341	5.794666290283203	1.5234193801879883
+172	('essay_set', 'avg_word_length', 'syntax_errors', 'readability_index')	0.9654134902537528	5.421578884124756	1.431527853012085
+173	('essay_set', 'avg_word_length', 'syntax_errors', 'difficult_words')	0.9598188065124952	5.797630786895752	1.5486043691635132
+174	('essay_set', 'avg_word_length', 'readability_index', 'difficult_words')	0.963652024339962	5.458008289337158	1.4382206201553345
+175	('essay_set', 'sentiment', 'noun_phrases', 'syntax_errors')	0.9532740115993281	6.278212070465088	1.5038450956344604
+176	('essay_set', 'sentiment', 'noun_phrases', 'readability_index')	0.9653422183173145	5.427308082580566	1.4401183128356934
+177	('essay_set', 'sentiment', 'noun_phrases', 'difficult_words')	0.9547265557238834	6.068605899810791	1.4896260499954224
+178	('essay_set', 'sentiment', 'syntax_errors', 'readability_index')	0.958160834634243	5.940518379211426	1.5836313962936401
+179	('essay_set', 'sentiment', 'syntax_errors', 'difficult_words')	0.9622635735912841	6.063379287719727	1.5154081583023071
+180	('essay_set', 'sentiment', 'readability_index', 'difficult_words')	0.9533799640923635	6.517997741699219	1.713282585144043
+181	('essay_set', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9650918041735013	5.457732677459717	1.4353718757629395
+182	('essay_set', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9591509712336981	6.025442600250244	1.5819965600967407
+183	('essay_set', 'noun_phrases', 'readability_index', 'difficult_words')	0.9560062350068662	6.847405433654785	1.7817333936691284
+184	('essay_set', 'syntax_errors', 'readability_index', 'difficult_words')	0.9561920083623828	6.314253330230713	1.7018842697143555
+185	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment')	0.16903736617180787	79.0054931640625	6.049999237060547
+186	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases')	0.10989450159257608	80.03691101074219	5.965331554412842
+187	('essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors')	0.08515775435328021	81.94267272949219	5.948237895965576
+188	('essay_length', 'avg_sentence_length', 'avg_word_length', 'readability_index')	0.10466135276896515	80.5402603149414	5.90544319152832
+189	('essay_length', 'avg_sentence_length', 'avg_word_length', 'difficult_words')	0.18285478892546014	78.15904998779297	6.061185836791992
+190	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases')	0.11579660954041282	79.48749542236328	6.031795978546143
+191	('essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors')	0.0991523092380987	81.1402816772461	5.965408802032471
+192	('essay_length', 'avg_sentence_length', 'sentiment', 'readability_index')	0.11297237602204213	79.75247955322266	5.955798149108887
+193	('essay_length', 'avg_sentence_length', 'sentiment', 'difficult_words')	0.1190342920602494	79.59658813476562	5.947243690490723
+194	('essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors')	0.17405887366869155	78.75377655029297	6.072242259979248
+195	('essay_length', 'avg_sentence_length', 'noun_phrases', 'readability_index')	0.20183479642894064	78.22046661376953	6.289374351501465
+196	('essay_length', 'avg_sentence_length', 'noun_phrases', 'difficult_words')	0.2196948897501272	77.96881103515625	6.175848484039307
+197	('essay_length', 'avg_sentence_length', 'syntax_errors', 'readability_index')	0.17399243744200255	78.66452026367188	6.026851177215576
+198	('essay_length', 'avg_sentence_length', 'syntax_errors', 'difficult_words')	0.10174215383646179	82.05982208251953	5.987954616546631
+199	('essay_length', 'avg_sentence_length', 'readability_index', 'difficult_words')	0.18261625448425478	79.83500671386719	5.987562656402588
+200	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases')	0.1721536720239134	78.91963958740234	6.1000285148620605
+201	('essay_length', 'avg_word_length', 'sentiment', 'syntax_errors')	0.10089783799693697	81.10857391357422	5.9897661209106445
+202	('essay_length', 'avg_word_length', 'sentiment', 'readability_index')	0.10497635939285466	79.97181701660156	5.979170322418213
+203	('essay_length', 'avg_word_length', 'sentiment', 'difficult_words')	0.18475650809970312	78.64466094970703	6.102927207946777
+204	('essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors')	0.1800673102224719	79.0062026977539	6.087093830108643
+205	('essay_length', 'avg_word_length', 'noun_phrases', 'readability_index')	0.17543269119629168	78.05790710449219	6.029253005981445
+206	('essay_length', 'avg_word_length', 'noun_phrases', 'difficult_words')	0.18583126529955418	77.94926452636719	6.036895275115967
+207	('essay_length', 'avg_word_length', 'syntax_errors', 'readability_index')	0.1755124461183658	78.72974395751953	6.0709052085876465
+208	('essay_length', 'avg_word_length', 'syntax_errors', 'difficult_words')	0.18074774894427104	78.20242309570312	6.043860912322998
+209	('essay_length', 'avg_word_length', 'readability_index', 'difficult_words')	0.1932278260700645	77.69476318359375	6.029305458068848
+210	('essay_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.18088973299262745	78.84127044677734	6.076545715332031
+211	('essay_length', 'sentiment', 'noun_phrases', 'readability_index')	0.18500994123882541	77.73381805419922	6.002837181091309
+212	('essay_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.1888042935429387	77.46556091308594	6.038426399230957
+213	('essay_length', 'sentiment', 'syntax_errors', 'readability_index')	0.18215471864962318	78.06278991699219	6.03817081451416
+214	('essay_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.1900255671811767	77.8949966430664	6.060935020446777
+215	('essay_length', 'sentiment', 'readability_index', 'difficult_words')	0.18923274818698288	77.46963500976562	6.0153326988220215
+216	('essay_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.1793333226182362	77.6015853881836	5.966775417327881
+217	('essay_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.19043347447419734	77.48115539550781	5.995520114898682
+218	('essay_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.19390587608040533	77.43576049804688	5.991454601287842
+219	('essay_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.20617712246566067	79.17781829833984	6.325216770172119
+220	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases')	0.10312215023043314	79.78948974609375	6.160678386688232
+221	('avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors')	0.07705398417419862	82.7660140991211	6.431709289550781
+222	('avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index')	0.03373050079641615	84.06520080566406	6.21726655960083
+223	('avg_sentence_length', 'avg_word_length', 'sentiment', 'difficult_words')	0.12372252997092015	80.36475372314453	5.986307621002197
+224	('avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors')	0.1366006595026632	80.25370788574219	6.1056809425354
+225	('avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index')	0.11946120460268095	79.19991302490234	6.126919746398926
+226	('avg_sentence_length', 'avg_word_length', 'noun_phrases', 'difficult_words')	0.15620519055965576	79.4177017211914	6.081686496734619
+227	('avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index')	0.09340431964893248	82.7013931274414	6.541327476501465
+228	('avg_sentence_length', 'avg_word_length', 'syntax_errors', 'difficult_words')	0.1343905714774556	81.66560363769531	6.455819129943848
+229	('avg_sentence_length', 'avg_word_length', 'readability_index', 'difficult_words')	0.12798062506313246	80.56991577148438	6.467733860015869
+230	('avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.13313132933376381	80.2715072631836	6.1120147705078125
+231	('avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index')	0.1255937898456002	79.0793228149414	6.130553722381592
+232	('avg_sentence_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.15685408341814888	79.45704650878906	6.099131107330322
+233	('avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index')	0.09181028885191678	82.7305679321289	6.5486321449279785
+234	('avg_sentence_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.12357318071222612	80.90727996826172	6.130549907684326
+235	('avg_sentence_length', 'sentiment', 'readability_index', 'difficult_words')	0.13201946888463068	80.46764373779297	6.4702067375183105
+236	('avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.10630066066281407	80.27788543701172	6.011322498321533
+237	('avg_sentence_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.16473076934265551	79.87247467041016	6.1689019203186035
+238	('avg_sentence_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.1626234339385897	79.75215148925781	6.4428229331970215
+239	('avg_sentence_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.1418966650268898	81.80050659179688	6.607794284820557
+240	('avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.12100095455650572	80.4324722290039	6.172417640686035
+241	('avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.12163512811094301	79.05278778076172	6.086284160614014
+242	('avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.1064488283924987	82.21064758300781	5.638600826263428
+243	('avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.07036372472153474	82.421630859375	6.3292951583862305
+244	('avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.07830471212563495	83.77813720703125	5.646294593811035
+245	('avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.11389271384293109	79.44051361083984	6.120145797729492
+246	('avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.14912389625896005	80.2527847290039	6.459673881530762
+247	('avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.10786967609479226	83.4550552368164	5.681543350219727
+248	('avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.12398028383287096	79.1109848022461	6.010443687438965
+249	('avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.1418713916042461	81.77034759521484	6.58158016204834
+250	('sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.11887096569962508	79.9825439453125	6.199443340301514
+251	('sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.12912149148309182	79.60578918457031	6.084456920623779
+252	('sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.1648552725617961	79.39171600341797	6.425338268280029
+253	('sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.14579534067478617	81.42730712890625	6.563736915588379
+254	('noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.1695831519774481	80.54371643066406	6.485732555389404
+255	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment')	0.9161051959200955	10.635374069213867	1.9344452619552612
+256	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases')	0.9562002433607159	7.965226173400879	1.6988071203231812
+257	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors')	0.9553368533154415	7.794904708862305	1.7321696281433105
+258	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'readability_index')	0.9213910366478464	9.985179901123047	1.8633002042770386
+259	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'difficult_words')	0.952051469832736	8.453174591064453	1.8236656188964844
+260	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases')	0.9642606227573449	5.898034572601318	1.491813063621521
+261	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors')	0.9656871278683701	5.61372184753418	1.4544923305511475
+262	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'readability_index')	0.9197497899791037	10.150964736938477	1.8850693702697754
+263	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'difficult_words')	0.9339790644622801	8.279684066772461	1.678000807762146
+264	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors')	0.9522017055642569	7.1915435791015625	1.807314395904541
+265	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases', 'readability_index')	0.9332193016112319	8.43148136138916	1.6819429397583008
+266	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases', 'difficult_words')	0.9630379044815928	7.126873970031738	1.6046385765075684
+267	('essay_set', 'essay_length', 'avg_sentence_length', 'syntax_errors', 'readability_index')	0.914542832542854	10.969667434692383	2.007620334625244
+268	('essay_set', 'essay_length', 'avg_sentence_length', 'syntax_errors', 'difficult_words')	0.9574139155136886	7.487766265869141	1.6796071529388428
+269	('essay_set', 'essay_length', 'avg_sentence_length', 'readability_index', 'difficult_words')	0.9531387378815454	8.238412857055664	1.8060719966888428
+270	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases')	0.9658551891687603	5.7077202796936035	1.4821293354034424
+271	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'syntax_errors')	0.9659573288828686	5.714834690093994	1.4715262651443481
+272	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'readability_index')	0.9658885423778714	5.645793437957764	1.4649004936218262
+273	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'difficult_words')	0.9659406544113476	5.6539306640625	1.4533462524414062
+274	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors')	0.9648623330300309	5.819023132324219	1.4897871017456055
+275	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases', 'readability_index')	0.9653856655828974	5.714680194854736	1.481175184249878
+276	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases', 'difficult_words')	0.96578683836872	5.637390613555908	1.4655336141586304
+277	('essay_set', 'essay_length', 'avg_word_length', 'syntax_errors', 'readability_index')	0.9649999697233991	5.705730438232422	1.4856361150741577
+278	('essay_set', 'essay_length', 'avg_word_length', 'syntax_errors', 'difficult_words')	0.9656332090156744	5.641880989074707	1.459372639656067
+279	('essay_set', 'essay_length', 'avg_word_length', 'readability_index', 'difficult_words')	0.9115016036619628	11.351088523864746	2.0769546031951904
+280	('essay_set', 'essay_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.954757078838708	8.2409029006958	1.7686103582382202
+281	('essay_set', 'essay_length', 'sentiment', 'noun_phrases', 'readability_index')	0.9658663001951594	5.786225318908691	1.4848754405975342
+282	('essay_set', 'essay_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.9539604598259819	8.279373168945312	1.796624779701233
+283	('essay_set', 'essay_length', 'sentiment', 'syntax_errors', 'readability_index')	0.9346216589507013	8.74765682220459	1.7412816286087036
+284	('essay_set', 'essay_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.9664910304643959	5.706381320953369	1.4682470560073853
+285	('essay_set', 'essay_length', 'sentiment', 'readability_index', 'difficult_words')	0.9441559045642052	7.269845962524414	1.7389570474624634
+286	('essay_set', 'essay_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.92594996314482	9.445364952087402	1.805544376373291
+287	('essay_set', 'essay_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9562391886949424	8.034200668334961	1.68434476852417
+288	('essay_set', 'essay_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.93275706494455	8.49716854095459	1.8565537929534912
+289	('essay_set', 'essay_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.9493569107901871	6.78554630279541	1.64157235622406
+290	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases')	0.9538056318164433	6.367457389831543	1.5691715478897095
+291	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors')	0.9368654417940504	8.143949508666992	1.8226560354232788
+292	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index')	0.954276000608397	6.332452297210693	1.6234558820724487
+293	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'difficult_words')	0.9192920057147553	10.63105297088623	2.0700221061706543
+294	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors')	0.954167178751482	6.223525524139404	1.509224772453308
+295	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index')	0.9545376537392986	6.561067581176758	1.6235533952713013
+296	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'difficult_words')	0.9569164918912936	6.098194122314453	1.6242763996124268
+297	('essay_set', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index')	0.9626214731402704	6.961775779724121	1.6943442821502686
+298	('essay_set', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'difficult_words')	0.9496270651026623	6.602255821228027	1.58866548538208
+299	('essay_set', 'avg_sentence_length', 'avg_word_length', 'readability_index', 'difficult_words')	0.9569645646515179	6.461615085601807	1.6622036695480347
+300	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.9636424509058543	6.094746112823486	1.5188219547271729
+301	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index')	0.9563861407106606	6.2237548828125	1.5312973260879517
+302	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.9603924140003208	6.621217727661133	1.566075086593628
+303	('essay_set', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index')	0.9552189008193672	6.350491523742676	1.6140549182891846
+304	('essay_set', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.960236237587377	6.330795764923096	1.5578064918518066
+305	('essay_set', 'avg_sentence_length', 'sentiment', 'readability_index', 'difficult_words')	0.9628535210629122	5.5314812660217285	1.4435099363327026
+306	('essay_set', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9592598775825852	6.266324996948242	1.5506260395050049
+307	('essay_set', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.95469778544721	6.652105331420898	1.6755484342575073
+308	('essay_set', 'avg_sentence_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.9591911805089463	6.256379127502441	1.575689673423767
+309	('essay_set', 'avg_sentence_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.9558512357273942	6.174296855926514	1.6254719495773315
+310	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.9521081716189927	6.384646415710449	1.5123251676559448
+311	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.9606980323244604	5.721405506134033	1.4926033020019531
+312	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.9626497035259314	6.92568826675415	1.6665610074996948
+313	('essay_set', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.955986188106164	6.202859401702881	1.6776156425476074
+314	('essay_set', 'avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.9625738560396621	6.059851169586182	1.5042283535003662
+315	('essay_set', 'avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.9560195520909607	6.113701820373535	1.5948237180709839
+316	('essay_set', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9627474461138656	5.781332969665527	1.490098237991333
+317	('essay_set', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9580178866301647	6.103564739227295	1.6195273399353027
+318	('essay_set', 'avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.9582793406811985	6.344680309295654	1.668613314628601
+319	('essay_set', 'avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.9598617563528203	5.986688137054443	1.5870853662490845
+320	('essay_set', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9609493647486352	5.812283039093018	1.5093801021575928
+321	('essay_set', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9590805679447675	6.0095930099487305	1.5761537551879883
+322	('essay_set', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9549594633382723	6.222084045410156	1.5721428394317627
+323	('essay_set', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.9562386704667499	6.420424461364746	1.732148289680481
+324	('essay_set', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9589676352848779	6.20468282699585	1.5922739505767822
+325	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases')	0.11609020245681356	79.74911499023438	6.064799785614014
+326	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors')	0.09889887572637446	81.496826171875	5.982217311859131
+327	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index')	0.11072368837726487	79.80728149414062	5.994446754455566
+328	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'difficult_words')	0.18412171519832943	77.85833740234375	6.0875349044799805
+329	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors')	0.10971777835002716	80.64481353759766	5.96136474609375
+330	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index')	0.11708279870568095	79.40382385253906	5.998908519744873
+331	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'difficult_words')	0.1842264133753858	77.64356994628906	5.980673789978027
+332	('essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index')	0.17091573653044134	78.76528930664062	6.045820236206055
+333	('essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'difficult_words')	0.10366615289838221	81.11546325683594	5.976965427398682
+334	('essay_length', 'avg_sentence_length', 'avg_word_length', 'readability_index', 'difficult_words')	0.19009291557413177	80.11812591552734	5.990231037139893
+335	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.11510741696802573	80.12187194824219	5.966074466705322
+336	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index')	0.12831612398132197	78.99258422851562	6.0440216064453125
+337	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.18830650796993875	77.72749328613281	5.970750331878662
+338	('essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index')	0.09309466662277543	81.73957824707031	5.983979225158691
+339	('essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.10891628578688839	80.81207275390625	5.99623966217041
+340	('essay_length', 'avg_sentence_length', 'sentiment', 'readability_index', 'difficult_words')	0.1840726493111673	79.79369354248047	5.8805742263793945
+341	('essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.14970030105532972	79.09124755859375	5.6233134269714355
+342	('essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.1954828167842353	77.41504669189453	6.186747074127197
+343	('essay_length', 'avg_sentence_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.19398720993697816	77.40406799316406	6.016999244689941
+344	('essay_length', 'avg_sentence_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.10935642225836639	80.57232666015625	5.969749927520752
+345	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.17979062003150204	78.9961166381836	6.130316734313965
+346	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.20054203585525265	78.48998260498047	6.330993175506592
+347	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.1973281093502699	77.7331771850586	6.045697212219238
+348	('essay_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.18218494507894833	78.3851089477539	6.1034932136535645
+349	('essay_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.1840663598483998	78.41474914550781	6.041104793548584
+350	('essay_length', 'avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.18434035262318937	77.54755401611328	6.03803014755249
+351	('essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.17666618845767368	78.49394226074219	6.0444655418396
+352	('essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.19015893168862608	77.8865966796875	6.031713008880615
+353	('essay_length', 'avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.1889947748733929	77.23766326904297	5.95297908782959
+354	('essay_length', 'avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.21970679595113818	83.47567749023438	6.7501540184021
+355	('essay_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.17783870260435475	78.34175109863281	6.0370378494262695
+356	('essay_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.19582075690068357	77.66627502441406	6.017589092254639
+357	('essay_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.1892978805549782	80.60610961914062	6.083097457885742
+358	('essay_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.17100650849538546	78.40499114990234	6.286760330200195
+359	('essay_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.16001975501059296	77.79615020751953	5.81812047958374
+360	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.1365576722556474	80.10294342041016	6.085018157958984
+361	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.11905188353491358	79.2260513305664	6.073418140411377
+362	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.113077915808102	82.8771743774414	5.618624210357666
+363	('avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.06907713800919135	82.53300476074219	6.331114292144775
+364	('avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.1238343203074499	80.81239318847656	6.120423316955566
+365	('avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.13257951060535944	80.62023162841797	6.528923988342285
+366	('avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.14545087346203334	80.28701782226562	6.459505081176758
+367	('avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.16380286645602637	80.0003890991211	6.148823261260986
+368	('avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.12180715025230637	79.21272277832031	5.981571197509766
+369	('avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.1454670666406619	81.28388977050781	6.543577671051025
+370	('avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.10939431431405255	80.11041259765625	5.998563766479492
+371	('avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.10592815822240231	84.1136703491211	5.6453046798706055
+372	('avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.1705663695970615	79.55630493164062	6.423554420471191
+373	('avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.14588248614010801	81.07182312011719	6.524454593658447
+374	('avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.13419131438534504	78.97145080566406	6.086280822753906
+375	('avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.11212609973404919	79.99420928955078	5.949622631072998
+376	('avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.12813507560789006	79.5538330078125	6.115089416503906
+377	('avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.12612454903437886	78.91545104980469	6.007136821746826
+378	('avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.15033790263676816	81.2846908569336	6.559605598449707
+379	('avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.1682994250047165	80.14337158203125	6.452400207519531
+380	('sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.17032283291877237	79.73487854003906	6.433958530426025
+381	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases')	0.9557570835701672	7.994024276733398	1.705376386642456
+382	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors')	0.9575229815051317	6.505695819854736	1.6581395864486694
+383	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index')	0.9466149613916011	7.063083171844482	1.6768814325332642
+384	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'difficult_words')	0.9523105789140959	8.244436264038086	1.8254013061523438
+385	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors')	0.9568139113006559	7.83151912689209	1.6707851886749268
+386	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index')	0.9354879547397024	8.220004081726074	1.6856815814971924
+387	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'difficult_words')	0.9555773991482072	8.390119552612305	1.7617619037628174
+388	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index')	0.9148392971928353	21.150466918945312	2.6961042881011963
+389	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'difficult_words')	0.9558774437105618	7.706084728240967	1.7355761528015137
+390	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'readability_index', 'difficult_words')	0.9397695233241076	8.275137901306152	1.9350274801254272
+391	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.9569604669826708	7.786562919616699	1.6800050735473633
+392	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index')	0.9567885055414286	8.248100280761719	1.7235758304595947
+393	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.9576597328287502	7.999536514282227	1.7091695070266724
+394	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index')	0.9543311960896529	6.19301176071167	1.5253865718841553
+395	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.9535780400953583	8.084779739379883	1.7958447933197021
+396	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'readability_index', 'difficult_words')	0.9646294072114163	5.813339710235596	1.4996635913848877
+397	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9346667598441722	8.468539237976074	1.7398523092269897
+398	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9562229763605882	7.862844467163086	1.6751757860183716
+399	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.9587065170642008	7.393251895904541	1.6276724338531494
+400	('essay_set', 'essay_length', 'avg_sentence_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.9286968451604377	9.311734199523926	1.7682758569717407
+401	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.9653124889756992	5.821136474609375	1.501676082611084
+402	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.9653472104451243	5.834469318389893	1.4859580993652344
+403	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.9569053104834034	8.028434753417969	1.7107031345367432
+404	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.9330485893701702	8.545851707458496	1.7249995470046997
+405	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.9358526979856796	8.188846588134766	1.6734572649002075
+406	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.964867220669692	5.765114784240723	1.4840483665466309
+407	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9120949947444863	11.166879653930664	2.014561176300049
+408	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9330687383316948	8.7755708694458	2.025644063949585
+409	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.9655304915694526	5.704641819000244	1.4655060768127441
+410	('essay_set', 'essay_length', 'avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.931075731445274	8.784463882446289	1.7459611892700195
+411	('essay_set', 'essay_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9658558319130336	5.700288772583008	1.465313196182251
+412	('essay_set', 'essay_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.933348825914152	8.871514320373535	2.0316243171691895
+413	('essay_set', 'essay_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9409450115254704	8.072442054748535	1.8763062953948975
+414	('essay_set', 'essay_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.8896483584069504	13.897781372070312	2.1291568279266357
+415	('essay_set', 'essay_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.930430397342877	9.096793174743652	1.7313151359558105
+416	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.9639297068292678	6.082001209259033	1.5012338161468506
+417	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.9598684939028433	5.7649383544921875	1.5263960361480713
+418	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.9547074434450672	6.182191848754883	1.4893901348114014
+419	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.9587883259736398	7.767431259155273	1.9015305042266846
+420	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.9125201265060072	10.80982494354248	2.0255002975463867
+421	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.9620301818272263	6.004395008087158	1.5026899576187134
+422	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9524085658823482	6.593252182006836	1.6113271713256836
+423	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9570690518648941	6.450354099273682	1.5889464616775513
+424	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.9599887900418526	6.516533374786377	1.5714174509048462
+425	('essay_set', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.9563203349905995	6.424545764923096	1.6383942365646362
+426	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9566412068919634	6.230163097381592	1.5618922710418701
+427	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9572522242833073	6.395576477050781	1.5813113451004028
+428	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9612189724605886	6.715891361236572	1.5904446840286255
+429	('essay_set', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.9543266417516097	9.90241813659668	1.816519856452942
+430	('essay_set', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9589190329857611	6.640428066253662	1.5906188488006592
+431	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9648821559474543	5.353024959564209	1.4194272756576538
+432	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9615859039148739	5.875945091247559	1.503072738647461
+433	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9609491415473603	6.0328264236450195	1.5724807977676392
+434	('essay_set', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.9607112546913597	5.888411045074463	1.530561923980713
+435	('essay_set', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9609964649738243	6.160323143005371	1.5807358026504517
+436	('essay_set', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9610416511702398	6.421652793884277	1.5557451248168945
+437	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.12406995234260709	79.59696197509766	6.026086807250977
+438	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.125575419826762	79.12277221679688	6.086323261260986
+439	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.19473069856415126	78.3647689819336	6.065792083740234
+440	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.10109458980890651	80.5959243774414	5.9933881759643555
+441	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.11460815036984051	80.59943389892578	5.96816873550415
+442	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.19937224018104438	80.52889251708984	6.491278648376465
+443	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.17799398450153836	77.83057403564453	6.007946014404297
+444	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.17621540826002724	76.86603546142578	5.954744338989258
+445	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.16311373028815157	78.77033233642578	5.586158752441406
+446	('essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.22596299873882753	83.50332641601562	6.769949436187744
+447	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.11524912306293045	79.97993469238281	5.967953205108643
+448	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.19560047223675014	77.5638427734375	5.9516143798828125
+449	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.16376997499873747	79.29522705078125	5.623215675354004
+450	('essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.20328631051277934	80.44280242919922	6.532406806945801
+451	('essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.22755057054313055	83.85700988769531	6.774070739746094
+452	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.21339411294744015	84.90094757080078	6.834888458251953
+453	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.19856104550255038	78.10735321044922	6.039127349853516
+454	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.19594849457679886	77.44290924072266	6.00584602355957
+455	('essay_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.21941851479428798	85.78952026367188	6.8354268074035645
+456	('essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.22461733971413578	83.39530181884766	6.722760200500488
+457	('essay_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.1940399607152271	77.06433868408203	5.939808368682861
+458	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.14806422630058813	80.20899963378906	6.458235263824463
+459	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.16428097975219025	79.72262573242188	6.126996994018555
+460	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.1249304029216528	79.0852279663086	5.988950729370117
+461	('avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.1434662922770531	81.33435821533203	6.56048059463501
+462	('avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.1639131174707753	80.15377044677734	6.44758415222168
+463	('avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.16790541535806724	80.09268188476562	6.463665962219238
+464	('avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.16692259491475525	79.79474639892578	6.439549922943115
+465	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors')	0.9649927816620758	5.8791913986206055	1.498681664466858
+466	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index')	0.9433166210062928	7.857457637786865	1.8972171545028687
+467	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'difficult_words')	0.9644752861250286	5.861763000488281	1.4847066402435303
+468	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index')	0.9236872625674805	9.78525447845459	1.8630361557006836
+469	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'difficult_words')	0.9638468790275224	5.852611064910889	1.507408857345581
+470	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'readability_index', 'difficult_words')	0.9439292180387739	7.386072158813477	1.7677347660064697
+471	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9591493580469944	7.899304389953613	1.6550071239471436
+472	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9551051014875199	8.046618461608887	1.72541081905365
+473	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'readability_index', 'difficult_words')	0.934062793315592	8.901432037353516	2.0153920650482178
+474	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'syntax_errors', 'readability_index', 'difficult_words')	0.9417132604879596	7.908320903778076	1.8229426145553589
+475	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9661723366418364	5.811253070831299	1.4850432872772217
+476	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9343442220355155	8.351214408874512	1.6820690631866455
+477	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9333120529734033	8.711064338684082	1.9872664213180542
+478	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.9530809967173469	6.32270622253418	1.5643001794815063
+479	('essay_set', 'essay_length', 'avg_sentence_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9310562034924853	9.126534461975098	1.7605957984924316
+480	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.96610643475276	5.930500030517578	1.5029959678649902
+481	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9655575185109311	5.680385589599609	1.4656673669815063
+482	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9654648014755847	5.759977340698242	1.482200026512146
+483	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.9655998616314923	5.654390335083008	1.4785981178283691
+484	('essay_set', 'essay_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9527187100738167	8.656193733215332	1.8022159337997437
+485	('essay_set', 'essay_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9396768134058573	7.807440757751465	1.6682404279708862
+486	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9508496948571717	6.55571985244751	1.5265170335769653
+487	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9592428566764677	7.941425323486328	1.7102241516113281
+488	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9587023573211461	6.804380893707275	1.6380436420440674
+489	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.9526058507829412	6.362857341766357	1.5108568668365479
+490	('essay_set', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9610160981409006	6.380380153656006	1.5441174507141113
+491	('essay_set', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.960512954402455	6.602638244628906	1.5692614316940308
+492	('essay_set', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.960498507244621	6.269974708557129	1.5858770608901978
+493	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.18210654223484024	77.86431884765625	6.001249313354492
+494	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.19571619011077368	78.77576446533203	6.314398288726807
+495	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.1948808852178765	76.96116638183594	5.994011878967285
+496	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.2062281958903205	81.01445007324219	6.577054500579834
+497	('essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.2063572145838275	80.48978424072266	6.512080669403076
+498	('essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.21020617591340007	80.04315185546875	6.524753570556641
+499	('essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.19963359039814077	77.03561401367188	5.968538284301758
+500	('avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.16801348116865367	79.97618865966797	6.458125591278076
+501	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index')	0.9645176370710202	5.950784683227539	1.5057839155197144
+502	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'difficult_words')	0.9307398362832997	8.757412910461426	1.720021367073059
+503	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'readability_index', 'difficult_words')	0.9415008538821003	8.067206382751465	1.8505597114562988
+504	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'syntax_errors', 'readability_index', 'difficult_words')	0.9406032796433746	8.278748512268066	1.9371410608291626
+505	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.927031821653585	9.604905128479004	1.890281081199646
+506	('essay_set', 'essay_length', 'avg_sentence_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9324083558846321	9.015239715576172	2.048309803009033
+507	('essay_set', 'essay_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9653293029281971	5.723597049713135	1.494915246963501
+508	('essay_set', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9596153733011337	6.7378249168396	1.587585210800171
+509	('essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.24007701132202108	86.32588195800781	6.889127731323242
+510	('essay_set', 'essay_length', 'avg_sentence_length', 'avg_word_length', 'sentiment', 'noun_phrases', 'syntax_errors', 'readability_index', 'difficult_words')	0.9363929448523446	8.556109428405762	1.708632469177246
